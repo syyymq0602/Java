@@ -1,4 +1,4 @@
-package learn.mysql.demo02;
+package mysql.demo02;
 
 import java.sql.*;
 import java.util.ArrayList;

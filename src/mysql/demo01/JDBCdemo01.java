@@ -1,4 +1,4 @@
-package learn.mysql.demo01;
+package mysql.demo01;
 
 import java.sql.*;
 

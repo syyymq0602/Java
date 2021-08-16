@@ -1,4 +1,4 @@
-package learn.mysql.demo02;
+package mysql.demo02;
 
 public class Student {
     private int id;
