@@ -33,11 +33,11 @@ public class JDBCUtils {
         }
     }
 
-    private static Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url,user,password);
     }
 
-    private static void close(Statement statement, Connection connection, ResultSet res) {
+    public static void close(Statement statement, Connection connection, ResultSet res) {
         if (statement != null) {
             try {
                 statement.close();
