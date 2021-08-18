@@ -12,3 +12,33 @@ h3{
     color: black;
     font-size: 20px;
 }
+h1,h2{
+    color: blueviolet;
+}
+
+div p{
+    font-size: 10ch;
+}
+
+h3 > p{
+    border: 1px solid;
+}
+
+input[type="text"]{
+    border: 3px solid;
+}
+
+a:hover{
+    color: pink;
+}
+
+a:link{
+
+}
+
+a:active{
+
+}
+a:visited{
+    
+}
