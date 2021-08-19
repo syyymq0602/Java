@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../../CSS/demo04.css">
+</head>
+<body>
+<div class="layout">
+    <div class="left">
+        <p>用户注册</p>
+        <p>USER REGISTER</p>
+    </div>
+
+    <div class="center">
+        <div class="form">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td class="td_left"><label for="user">用户名</label></td>
+                        <td class="td_right"><input type="text" name="username" placeholder="请输入用户名" id="user"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="password">密码</label></td>
+                        <td class="td_right"><input type="password" name="password" placeholder="请输入密码" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="email">邮箱</label></td>
+                        <td class="td_right"><input type="email" name="email" placeholder="请输入邮箱" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="name">姓名</label></td>
+                        <td class="td_right"><input type="text" name="name" placeholder="请输入姓名" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left"><label for="tel">手机号</label></td>
+                        <td class="td_right"><input type="number" name="tel" placeholder="请输入手机号" id="tel"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">性别</td>
+                        <td class="td_right">
+                            <input type="radio" name="gender" value="male"> 男
+                            <input type="radio" name="gender" value="female"> 女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">出生日期</td>
+                        <td class="td_right">
+                            <input type="date" name="birthday" id="birth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">爱好</td>
+                        <td class="td_right">
+                            <input type="checkbox" name="hobby" value="game"> 打游戏
+                            <input type="checkbox" name="hobby" value="shop"> 购物
+                            <input type="checkbox" name="hobby" value="code"> 编程
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">验证码</td>
+                        <td class="td_right">
+                            <input type="text" name="checkCode" id="checkCode">
+                            <img src="../../images/verify_code.jpg" id="image_check">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="td_right">
+                            <input class="register" type="submit" value="注册" >
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="right">
+        <p>已有帐号？<a href="../demo02/Demo02.html">立即登录</a></p>
+    </div>
+</div>
+</body>
+</html>
