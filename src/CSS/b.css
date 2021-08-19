@@ -1,0 +1,28 @@
+p{
+    color: #FF0000;
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;
+
+    border: 1px red solid;
+}
+
+div{
+    border: 1px black solid;
+    height: 200px;
+    width: 200px;
+    background: url("../images/logo.jpg") no-repeat center;
+    color: deeppink;
+    font-style: revert;
+}
+
+div.div1{
+    width: 200px;
+    height: 200px;
+
+}
+div.div2{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
