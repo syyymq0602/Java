@@ -71,7 +71,7 @@ document.getElementById("button").onclick = function (){
 
     let table = document.getElementsByTagName("table")[0];
     table.appendChild(tr);
-    
+
     add_tr()
 }
 

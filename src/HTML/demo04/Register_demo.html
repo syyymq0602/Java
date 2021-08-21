@@ -14,15 +14,21 @@
 
     <div class="center">
         <div class="form">
-            <form action="#" method="post">
+            <form action="#" id="form" method="post">
                 <table>
                     <tr>
                         <td class="td_left"><label for="user">用户名</label></td>
-                        <td class="td_right"><input type="text" name="username" placeholder="请输入用户名" id="user"></td>
+                        <td class="td_right">
+                            <input type="text" name="username" placeholder="请输入用户名" id="user">
+                            <span id="span_username" class="error"></span>
+                        </td>
                     </tr>
                     <tr>
                         <td class="td_left"><label for="password">密码</label></td>
-                        <td class="td_right"><input type="password" name="password" placeholder="请输入密码" id="password"></td>
+                        <td class="td_right">
+                            <input type="password" name="password" placeholder="请输入密码" id="password">
+                            <span id="span_password" class="error"></span>
+                        </td>
                     </tr>
                     <tr>
                         <td class="td_left"><label for="email">邮箱</label></td>
@@ -79,4 +85,5 @@
     </div>
 </div>
 </body>
+<script type="text/javascript" src="../../JS/demo04.js"></script>
 </html>
