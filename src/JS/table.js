@@ -1,3 +1,45 @@
+window.onload = function (){
+    document.getElementById("selectAll").onclick = function (){
+        let cbs = document.getElementsByName("cd");
+        for (let i = 0; i < cbs.length; i++) {
+            cbs[i].checked = true;
+        }
+    }
+
+    document.getElementById("unSelectAll").onclick = function (){
+        let cbs = document.getElementsByName("cd");
+        for (let i = 0; i < cbs.length; i++) {
+            cbs[i].checked = false;
+        }
+    }
+
+    document.getElementById("selectRev").onclick = function (){
+        let cbs = document.getElementsByName("cd");
+        for (let i = 1; i < cbs.length; i++) {
+            cbs[i].checked = !cbs[i].checked;
+        }
+    }
+
+    document.getElementById("firstCb").onclick = function (){
+        let cbs = document.getElementsByName("cd");
+        for (let i = 0; i < cbs.length; i++) {
+            cbs[i].checked = this.checked;
+        }
+    }
+
+    let trs = document.getElementsByTagName("tr");
+    for (let i = 0; i < trs.length; i++) {
+        trs[i].onmouseover = function () {
+            trs[i].className = "over";
+        }
+
+        trs[i].onmouseout = function () {
+            trs[i].className = "out";
+        }
+    }
+}
+
+
 document.getElementById("button").onclick = function (){
     let id = document.getElementById("id").value;
     let name = document.getElementById("name").value;
