@@ -27,18 +27,8 @@ window.onload = function (){
         }
     }
 
-    let trs = document.getElementsByTagName("tr");
-    for (let i = 0; i < trs.length; i++) {
-        trs[i].onmouseover = function () {
-            trs[i].className = "over";
-        }
-
-        trs[i].onmouseout = function () {
-            trs[i].className = "out";
-        }
-    }
+    add_tr()
 }
-
 
 document.getElementById("button").onclick = function (){
     let id = document.getElementById("id").value;
@@ -63,18 +53,43 @@ document.getElementById("button").onclick = function (){
     a.appendChild(text_a);
     td_a.appendChild(a);
 
+    let td_cb = document.createElement("td");
+    let input_cb = document.createElement("input");
+    input_cb.setAttribute("type","checkbox");
+    input_cb.setAttribute("name","cd");
+    let cb = document.createTextNode("");
+    input_cb.appendChild(cb);
+    td_cb.appendChild(input_cb)
+
     let tr = document.createElement("tr");
+    tr.setAttribute("class","out");
+    tr.appendChild(td_cb)
     tr.appendChild(td_id);
     tr.appendChild(td_name);
     tr.appendChild(td_gender);
     tr.appendChild(td_a);
 
     let table = document.getElementsByTagName("table")[0];
-    table.appendChild(tr)
+    table.appendChild(tr);
+    
+    add_tr()
 }
 
 function delTr(obj){
     let table = obj.parentNode.parentNode.parentNode;
     let tr = obj.parentNode.parentNode;
     table.removeChild(tr);
+}
+
+function add_tr(){
+    let trs = document.getElementsByTagName("tr");
+    for (let i = 0; i < trs.length; i++) {
+        trs[i].onmouseover = function () {
+            trs[i].className = "over";
+        }
+
+        trs[i].onmouseout = function () {
+            trs[i].className = "out";
+        }
+    }
 }
