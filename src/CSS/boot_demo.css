@@ -23,3 +23,20 @@
     background-color: #FFC900;
     margin-top: 12px;
 }
+
+.jx{
+    border-bottom: 4px solid #FFC900;
+    padding-bottom: 5px;
+}
+div.jx span{
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.foot{
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFD026;
+    text-align: center;
+    font-size: 10px;
+}
